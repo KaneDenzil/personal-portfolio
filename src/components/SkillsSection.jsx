@@ -3,12 +3,14 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", category: "frontend" },
+  { name: "HTML", category: "frontend" },
+  { name: "CSS", category: "frontend" },
   { name: "JavaScript", category: "frontend" },
-  { name: "React", category: "frontend" },
   { name: "TypeScript", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "React-Native", category: "frontend" },
+  { name: "Swift-UI", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
-  { name: "Next.js", category: "frontend" },
 
   // Backend
   { name: "Node.js", category: "backend" },
@@ -17,10 +19,22 @@ const skills = [
   { name: "GraphQL", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", category: "tools" },
+  { name: "Git", category: "tools" },
   { name: "Docker", category: "tools" },
   { name: "Figma", category: "tools" },
+  { name: "JIRA", category: "tools" },
+  { name: "Confluence", category: "tools" },
+  { name: "Slack", category: "tools" },
+  { name: "JIRA", category: "tools" },
+  { name: "GitHub Actions", category: "tools" },
+  { name: "Fastlane", category: "tools" },
   { name: "VS Code", category: "tools" },
+  { name: "Google Play Console", category: "tools" },
+  { name: "TestFlight", category: "tools" },
+  { name: "App Store Connect", category: "tools" },
+  { name: "GitHub Co-Pilot", category: "tools" },
+  { name: "Cursor", category: "tools"},
+
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
