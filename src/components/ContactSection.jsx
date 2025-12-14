@@ -88,10 +88,13 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">
-                    Available upon request
-                  </p>
+                  <h4 className="font-medium"> Phone</h4>
+                  <a
+                    href="tel:+16478222594"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    +1-(647)-822-2594
+                  </a>
                 </div>
               </div>
 
