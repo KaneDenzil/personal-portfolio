@@ -25,16 +25,13 @@ export const ContactSection = () => {
     mode: "onTouched",
   });
 
-  // Vite exposes env vars via import.meta.env
-  const accessKey =
-    import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE";
+  const accessKey = "22bba20b-ab19-4f4d-900b-e84eec06f502";
 
   const { submit } = useWeb3Forms({
     access_key: accessKey,
     settings: {
       from_name: "Kane Personal Portfolio",
       subject: "New Contact Message from your Website",
-      // emails will go to the address you used when creating the access key
     },
     onSuccess: (msg, data) => {
       toast({
