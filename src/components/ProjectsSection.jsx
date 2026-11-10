@@ -1,4 +1,4 @@
-import { Apple, ExternalLink, Play } from "lucide-react";
+import { Apple, ExternalLink, Globe, Play } from "lucide-react";
 
 const projects = [
   {
@@ -26,6 +26,11 @@ const projects = [
         label: "Phoenix",
         icon: Apple,
         href: "https://apps.apple.com/ca/developer/phoenix-digital-health-inc/id1837202930",
+      },
+      {
+        label: "Phoenix",
+        icon: Play,
+        href: "https://play.google.com/store/apps/developer?id=Phoenix+Digital+Health",
       },
       {
         label: "Raven",
@@ -113,6 +118,35 @@ const projects = [
         label: "Play Store",
         icon: Play,
         href: "https://play.google.com/store/apps/details?id=com.myantskiin",
+      },
+    ],
+  },
+  {
+    title: "SkiinHeat / Delilah",
+    company: "Myant",
+    period: "2019 – 2021",
+    role: "iOS Developer",
+    description:
+      "A native iOS app, released internally, that controls a heated smart textile over CoreBluetooth. It covers device discovery and command pipelines with structured async handling and XCTest coverage.",
+    highlight:
+      "Built a reusable Swift Package for BLE discovery and communication",
+    tags: ["Swift", "SwiftUI", "Combine", "CoreBluetooth", "XCTest"],
+    links: [],
+  },
+  {
+    title: "My Insurance Broker",
+    company: "My Insurance Broker",
+    period: "2019",
+    role: "Frontend Developer",
+    description:
+      "Customer-facing React experiences for an insurance brokerage, including the quote flows for home and auto insurance.",
+    highlight: "Home and auto insurance quote flows in React",
+    tags: ["React", "JavaScript", "Web"],
+    links: [
+      {
+        label: "Website",
+        icon: Globe,
+        href: "https://myinsurancebroker.com/",
       },
     ],
   },
