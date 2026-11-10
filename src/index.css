@@ -143,6 +143,8 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+  /* hidden until its animation delay ends; keyframes control opacity after */
+  opacity: 0;
 }
 
 #root {
