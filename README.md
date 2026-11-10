@@ -3,7 +3,7 @@
 The source for my personal portfolio site — a single-page React app with an
 animated starfield background, a filterable skills grid, and a contact form.
 
-Built with **React 18**, **Vite 5**, and **Tailwind CSS 4**. Deployed on Vercel.
+Built with **React 18**, **Vite 5**, and **Tailwind CSS 4**. Deployed on GitHub Pages.
 
 ## Tech stack
 
@@ -13,7 +13,7 @@ Built with **React 18**, **Vite 5**, and **Tailwind CSS 4**. Deployed on Vercel.
 - **Radix UI** — toast primitives
 - **react-hook-form** + **Web3Forms** — contact form handling and delivery
 - **react-router-dom** — routing (home page and a 404 route)
-- **Vercel** — hosting and deployment
+- **GitHub Pages** — hosting, published with the `gh-pages` package
 
 ## Sections
 
@@ -45,8 +45,10 @@ The dev server runs at [http://localhost:5173](http://localhost:5173).
 | `npm run build` | Build to `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run lint` | Run ESLint |
+| `npm run deploy` | Build and publish to GitHub Pages |
 
 ## Deployment
 
-Pushes to `master` deploy automatically via Vercel. `npm run build` outputs a
-static bundle to `dist/`, which is git-ignored.
+The site is served from the `gh-pages` branch at
+https://kanedenzil.github.io/personal-portfolio/. Run `npm run deploy` to build
+to `dist/` and publish it to that branch. Pushing to `master` does not deploy.
