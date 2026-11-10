@@ -1,97 +1,52 @@
-## 📋 Table of Contents
+# personal-portfolio
 
-1. [Introduction](#-introduction)
-2. [Tech Stack](#-tech-stack)
-3. [Features](#-features)
-4. [Quick Start](#-quick-start)
-5. [Screenshots](#-screenshots)
-6. [Deployment](#-deployment)
+The source for my personal portfolio site — a single-page React app with an
+animated starfield background, a filterable skills grid, and a contact form.
 
----
+Built with **React 18**, **Vite 5**, and **Tailwind CSS 4**. Deployed on Vercel.
 
-## 🚀 Introduction
+## Tech stack
 
----
+- **React 18** + **Vite 5** — UI and build tooling
+- **Tailwind CSS 4** — styling
+- **lucide-react** — icons
+- **Radix UI** — toast primitives
+- **react-hook-form** + **Web3Forms** — contact form handling and delivery
+- **react-router-dom** — routing (home page and a 404 route)
+- **Vercel** — hosting and deployment
 
-## ⚙️ Tech Stack
+## Sections
 
-- **React** – Component-based UI development
-- **Vite** – Lightning-fast build tool
-- **TailwindCSS** – Utility-first CSS for styling
-- **Lucide Icons** – Clean and beautiful icon pack
-- **Radix UI** – Accessible component primitives
-- **TypeScript (optional)** – Type safety and tooling
-- **GitHub & Vercel** – Deployment
+The main page is a single scrolling route (`src/pages/Home.jsx`) made up of:
 
----
+- **Hero** — intro and a call to action
+- **About** — background, focus areas, and CV download (PDF or DOCX)
+- **Skills** — filterable grid by category
+- **Contact** — contact details, social links, and a working contact form
 
-## ⚡️ Features
+## Running locally
 
-- 🌑 **Light/Dark Mode Toggle**
-  Save theme preference in local storage with beautiful transitions
-
-- 💫 **Animated Backgrounds**
-  Stars, meteors, scroll effects, and glowing UI elements
-
-- 📱 **Responsive Navigation**
-  Desktop and mobile menus with glassmorphism
-
-- 👨‍💻 **Hero & About Sections**
-  Showcase who you are with smooth intro animations and buttons
-
-- 📊 **Skills Grid**
-  Filterable progress bars and categories with animated width
-
-- 🖼️ **Projects Showcase**
-  Display screenshots, tech stacks, and GitHub/demo links
-
-- 📩 **Contact Section**
-  Social icons + responsive contact form with toast notifications
-
-- 🚀 **One-Click Deployment**
-  Easily host your site with Vercel and GitHub
-
----
-
-## 👌 Quick Start
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/)
-- [Git](https://git-scm.com/)
-
-### Clone and Run
+Requires [Node.js](https://nodejs.org/) 18 or newer.
 
 ```bash
-git clone https://github.com/yourusername/react-tailwind-portfolio.git
-cd react-tailwind-portfolio
+git clone https://github.com/KaneDenzil/personal-portfolio.git
+cd personal-portfolio
 npm install
 npm run dev
 ```
 
-Your app will be available at: [http://localhost:5173](http://localhost:5173)
+The dev server runs at [http://localhost:5173](http://localhost:5173).
 
----
+## Scripts
 
-## 🖼️ Screenshots
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite dev server |
+| `npm run build` | Build to `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |
 
----
+## Deployment
 
-## ☁️ Deployment
-
-### Deploy on GitHub Pages
-
----
-
-## 🔗 Useful Links
-
-- [React Documentation](https://reactjs.org/)
-- [Tailwind CSS Docs](https://tailwindcss.com/)
-- [Lucide Icons](https://lucide.dev/)
-- [Radix UI](https://www.radix-ui.com/)
-- [Vite](https://vitejs.dev/)
-- [Vercel](https://vercel.com/)
-
----
-
-Let me know if you'd like me to generate a version with your actual GitHub repo, YouTube URL, or a banner image suggestion!
+Pushes to `master` deploy automatically via Vercel. `npm run build` outputs a
+static bundle to `dist/`, which is git-ignored.

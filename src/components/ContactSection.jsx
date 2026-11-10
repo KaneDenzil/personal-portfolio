@@ -1,11 +1,10 @@
 import {
-  Instagram,
+  Coffee,
+  Github,
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Send,
-  Coffee,
   Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -85,21 +84,6 @@ export const ContactSection = () => {
 
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-medium"> Phone</h4>
-                  <a
-                    href="tel:+16478222594"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +1-(647)-822-2594
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -112,6 +96,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
+                <a
+                  href="https://github.com/KaneDenzil"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  <Github />
+                </a>
                 <a
                   href="https://www.linkedin.com/in/kane-denzil/"
                   target="_blank"

@@ -8,7 +8,6 @@ import docxUrl from "@/assets/cv/Kane Resume.docx?url";
  * DownloadCvMenu
  * - Click button to open a small menu with "PDF" and "DOCX"
  * - Uses Vite asset imports so URLs work with GitHub Pages base paths.
- * - Replace the placeholder files in src/assets/cv/ with your real CV files.
  */
 export const DownloadCvMenu = () => {
   const [open, setOpen] = useState(false);
@@ -57,7 +56,7 @@ export const DownloadCvMenu = () => {
           <a
             role="menuitem"
             href={pdfUrl}
-            download="Kane_Bernard_CV.pdf"
+            download="Kane_Quadras_CV.pdf"
             className="flex items-center gap-2 px-4 py-3 text-sm hover:bg-primary/10 transition-colors"
             onClick={() => setOpen(false)}
           >
@@ -68,7 +67,7 @@ export const DownloadCvMenu = () => {
           <a
             role="menuitem"
             href={docxUrl}
-            download="Kane_Bernard_CV.docx"
+            download="Kane_Quadras_CV.docx"
             className="flex items-center gap-2 px-4 py-3 text-sm hover:bg-primary/10 transition-colors"
             onClick={() => setOpen(false)}
           >

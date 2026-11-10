@@ -16,12 +16,12 @@ export const HeroSection = () => {
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Bernard
+              Quadras
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I’m a React, React Native, and iOS developer building cosmic-level experiences for web and mobile. From animations and performance to the tiniest UI details, I love turning ideas into products that feel sleek, fun, and effortless to use.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            I&rsquo;m a senior software engineer who builds React Native apps along with the React web clients, Node.js services, and AWS infrastructure behind them. I&rsquo;ve shipped apps for the NFL, Disney, and healthcare and fintech startups, and these days I&rsquo;m also building LLM features on Amazon Bedrock.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

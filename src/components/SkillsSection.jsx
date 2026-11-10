@@ -2,42 +2,58 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  // Mobile
+  { name: "React Native", category: "mobile" },
+  { name: "Expo", category: "mobile" },
+  { name: "Swift", category: "mobile" },
+  { name: "SwiftUI", category: "mobile" },
+  { name: "UIKit", category: "mobile" },
+  { name: "Kotlin", category: "mobile" },
+  { name: "Flutter", category: "mobile" },
+  { name: "CoreBluetooth", category: "mobile" },
+
   // Frontend
-  { name: "HTML", category: "frontend" },
-  { name: "CSS", category: "frontend" },
-  { name: "JavaScript", category: "frontend" },
   { name: "TypeScript", category: "frontend" },
+  { name: "JavaScript", category: "frontend" },
   { name: "React", category: "frontend" },
-  { name: "React-Native", category: "frontend" },
-  { name: "Swift-UI", category: "frontend" },
+  { name: "TanStack Query", category: "frontend" },
+  { name: "Zustand", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
 
   // Backend
   { name: "Node.js", category: "backend" },
-  { name: "Express", category: "backend" },
-  { name: "PostgreSQL", category: "backend" },
+  { name: "REST APIs", category: "backend" },
   { name: "GraphQL", category: "backend" },
+  { name: "PostgreSQL", category: "backend" },
+  { name: "SQL", category: "backend" },
+
+  // Cloud & AI
+  { name: "AWS Lambda", category: "cloud" },
+  { name: "API Gateway", category: "cloud" },
+  { name: "RDS", category: "cloud" },
+  { name: "Cognito", category: "cloud" },
+  { name: "Secrets Manager", category: "cloud" },
+  { name: "Amazon Bedrock", category: "cloud" },
+  { name: "Transcribe & Polly", category: "cloud" },
+  { name: "Ollama", category: "cloud" },
+  { name: "Prompt Engineering", category: "cloud" },
 
   // Tools
-  { name: "Git", category: "tools" },
-  { name: "Docker", category: "tools" },
-  { name: "Figma", category: "tools" },
-  { name: "JIRA", category: "tools" },
-  { name: "Confluence", category: "tools" },
-  { name: "Slack", category: "tools" },
-  { name: "JIRA", category: "tools" },
+  { name: "Claude Code", category: "tools" },
+  { name: "Cursor", category: "tools" },
+  { name: "GitHub Copilot", category: "tools" },
   { name: "GitHub Actions", category: "tools" },
+  { name: "EAS Build & Update", category: "tools" },
   { name: "Fastlane", category: "tools" },
-  { name: "VS Code", category: "tools" },
-  { name: "Google Play Console", category: "tools" },
-  { name: "TestFlight", category: "tools" },
-  { name: "App Store Connect", category: "tools" },
-  { name: "GitHub Co-Pilot", category: "tools" },
-  { name: "Cursor", category: "tools"},
-
+  { name: "Bitrise", category: "tools" },
+  { name: "Turborepo", category: "tools" },
+  { name: "Jest & RNTL", category: "tools" },
+  { name: "Datadog", category: "tools" },
+  { name: "Sentry", category: "tools" },
+  { name: "Jira", category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "mobile", "frontend", "backend", "cloud", "tools"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -60,22 +76,22 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary"
               )}
             >
-              {category}
+              {category === "cloud" ? "Cloud & AI" : category}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card px-4 py-3 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
-              </div>
+              <h3 className="font-medium text-sm md:text-base text-left">
+                {skill.name}
+              </h3>
             </div>
           ))}
         </div>
