@@ -1,12 +1,5 @@
-import {
-  Coffee,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Send,
-  Twitter,
-} from "lucide-react";
+import { Coffee, Mail, MapPin, Send } from "lucide-react";
+import { Github, Linkedin, Twitter } from "@/components/ui/brand-icons";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useForm } from "react-hook-form";
@@ -32,7 +25,7 @@ export const ContactSection = () => {
       from_name: "Kane Personal Portfolio",
       subject: "New Contact Message from your Website",
     },
-    onSuccess: (msg, data) => {
+    onSuccess: () => {
       toast({
         title: "Message sent! 🚀",
         description: "Thank you for your message. I'll get back to you soon.",
